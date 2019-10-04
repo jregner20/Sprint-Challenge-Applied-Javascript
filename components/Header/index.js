@@ -34,7 +34,7 @@ function Header() {
 
     dateSp.textContent = 'March 28, 2019';
     titleH.textContent = 'Lambda Times';
-    tempSp.textContent = '98';
+    tempSp.textContent = '98 Degrees';
 
     const selector = document.querySelector('.header-container');
     selector.appendChild(head);
