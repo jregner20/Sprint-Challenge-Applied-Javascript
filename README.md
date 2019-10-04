@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+the Dom is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.
+
 2. What is an event?
+
+JavaScript events are "things" that happen to HTML elements.
 
 3. What is an event listener?
 
+ event listener are "things" that happen based on a specified action by the user on a website, such as a background turning blue if the user clicks on the screen or holds down a key.
+
 4. Why would we convert a NodeList into an Array?
 
+because although a NodeList is similar to an Array, it doesn't feature many of the methods that are available with Arrays.
+
 5. What is a component?
+
+a component is a collection of code that allows you to create reusable custom elements.
 
 ### Git Set up
 
