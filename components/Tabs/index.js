@@ -28,10 +28,10 @@ function Tab(obj){
     return tab;
 }
 
-topics.forEach(element => {
-    axios.get("https://lambda-times-backend.herokuapp.com/topics")
-    .then(response => {
-        console.log(response);
-        Tab(response.data);
-    });
-});
+// data.topics.forEach(element => {
+//     axios.get("https://lambda-times-backend.herokuapp.com/topics")
+//     .then(response => {
+//         console.log(response);
+//         Tab(response.data);
+//     });
+// });
