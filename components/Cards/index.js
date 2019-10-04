@@ -24,6 +24,30 @@ axios.get("https://lambda-times-backend.herokuapp.com/articles")
 })
 
 function articleComp(){
+     
+    // create elements
+
+    const card = document.createElement('div');
+    const artHead = document.createElement('div');
+    const author = document.createElement('div');
+    const imgCont = document.createElement('div');
+    const image = document.createElement('img');
+    const authName = document.createElement('span');
+
+    // create structure
+
+    card.appendChild(artHead);
+    card.appendChild(author);
+    author.appendChild(imgCont);
+    imgCont.appendChild(image);
+    author.appendChild(authName);
+
+    // create classes
+
+    card.classList.add('card');
+    artHead.classList.add('headline');
+    author.classList.add('author');
+    imgCont.classList.add('img-container');
     
 }
 
