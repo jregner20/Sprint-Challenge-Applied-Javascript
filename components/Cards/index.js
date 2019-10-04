@@ -48,6 +48,20 @@ function articleComp(){
     artHead.classList.add('headline');
     author.classList.add('author');
     imgCont.classList.add('img-container');
-    
+
+    return card;
+
 }
 
+const blob = document.querySelector(".cards-container");
+
+axios.get("https://lambda-times-backend.herokuapp.com/articles")
+    .then(response => {
+        const art = response.data.articles;
+        console.log(art);
+        for (let i in art){
+            art[i].forEach(element => {
+                blob.appendChild(articleComp(art));
+            })
+        }
+    })
