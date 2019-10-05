@@ -21,9 +21,10 @@
 axios.get("https://lambda-times-backend.herokuapp.com/articles")
 .then(response => {
     console.log(response);
-})
+    articleComp(response.data);
+});
 
-function articleComp(){
+function articleComp(obj){
      
     // create elements
 
@@ -49,6 +50,13 @@ function articleComp(){
     author.classList.add('author');
     imgCont.classList.add('img-container');
 
+    // create content
+
+    artHead.textContent = obj.headline;
+    image.src = obj.authorPhoto;
+    authName.textContent = `by ${obj.authorName}`;
+    // console.log(obj);
+
     return card;
 
 }
@@ -61,7 +69,7 @@ axios.get("https://lambda-times-backend.herokuapp.com/articles")
         console.log(art);
         for (let i in art){
             art[i].forEach(element => {
-                blob.appendChild(articleComp(art));
+                blob.appendChild(articleComp(element));
             })
         }
     })
